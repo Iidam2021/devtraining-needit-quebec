@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_cubes">
+    <pa_cubes action="INSERT_OR_UPDATE">
+        <benchmarking>false</benchmarking>
+        <calendar>standard</calendar>
+        <calendar_freq/>
+        <conditions table="ast_contract">contract_model=a581e836c3102000b959fd251eba8fba^expiration=a6c2e38ec3103000c111113e5bba8f84^ORexpiration=dda2e38ec3103000c111113e5bba8fab^ORexpiration=0f72e78ec3103000c111113e5bba8fb2<item display_table="cmdb_model" display_value="Maintenance" endquery="false" field="contract_model" goto="false" newquery="false" operator="=" or="false" value="a581e836c3102000b959fd251eba8fba"/>
+            <item display_table="clm_condition_checker" display_value="Within 90 days" endquery="false" field="expiration" goto="false" newquery="false" operator="=" or="false" value="a6c2e38ec3103000c111113e5bba8f84"/>
+            <item display_table="clm_condition_checker" display_value="Within 60 days" endquery="false" field="expiration" goto="false" newquery="false" operator="=" or="true" value="dda2e38ec3103000c111113e5bba8fab"/>
+            <item display_table="clm_condition_checker" display_value="Within 30 days" endquery="false" field="expiration" goto="false" newquery="false" operator="=" or="true" value="0f72e78ec3103000c111113e5bba8fb2"/>
+        </conditions>
+        <description>有効期限切れの保守対応を表示する</description>
+        <facts_table>ast_contract</facts_table>
+        <facts_table_pk/>
+        <facts_table_pktable/>
+        <facts_table_pkview/>
+        <frequency>10</frequency>
+        <max_record_fetch_count>50000</max_record_fetch_count>
+        <name>contract.maintenance</name>
+        <override_record_collection>false</override_record_collection>
+        <report_source/>
+        <report_source_updated_at/>
+        <sys_class_name>pa_cubes</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-24 05:12:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e97269fb0778f010148ef2218c1ed026</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>contract.maintenance</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>pa_cubes_e97269fb0778f010148ef2218c1ed026</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 07:43:24</sys_updated_on>
+    </pa_cubes>
+    <sys_translated_text action="delete_multiple" query="documentkey=e97269fb0778f010148ef2218c1ed026"/>
+</record_update>
